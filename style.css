@@ -44,7 +44,7 @@ header {
 }
 
 header .logo {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #F19C33;
 }
 
@@ -53,7 +53,7 @@ header .logo span {
 }
 
 header .navbar a {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   margin-left: 2rem;
   color: #D94B25;
 }
@@ -80,7 +80,7 @@ header label {
 }
 
 .footer .credit {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: normal;
   letter-spacing: 0.1rem;
   color: #333333;

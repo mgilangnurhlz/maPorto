@@ -113,12 +113,13 @@ header .logo span {
 }
 
 .alllist{
-  padding-left: 1rem;
+  
   /* border: 1px solid; */
   display: flex;
   flex-direction: column;
 }
 .alllist .list{
+  padding-left: 1rem;
   border: 1px solid;
   display: flex;
   flex-direction: row;
@@ -134,7 +135,7 @@ header .logo span {
   /* border: 1px solid; */
   font-size: 1.7rem;
   font-weight: 400;
-  margin-left: 1.5rem;
+  margin-left: 0rem;
 }
 
 .skill {
@@ -149,6 +150,28 @@ header .logo span {
   font-size: 2.7rem;
   font-weight: 600;
   margin-bottom: 2rem;
+}
+
+.project {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 5rem;
+}
+.project .text h1{
+  text-align: left;
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.cv {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 5rem;
 }
 
 

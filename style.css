@@ -105,11 +105,44 @@ header .logo span {
   align-items: stretch;
   margin-top: 5rem;
 }
-.desc .text h1{
+.desc .text{
+  display: flex;
+  flex-direction: column;
+}
+.desc .text h2{
   text-align: left;
   font-size: 2.7rem;
   font-weight: 600;
+  
+}
+.desc .text {
+  border: 1px solid;
   margin-bottom: 2rem;
+}
+.desc .text img {
+  width:1.3rem;
+}
+
+.desc .text a{
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+}
+.desc .text a:hover{
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(130, 130, 130);
+}
+
+.desc .text p{
+  font-size: 1.7rem;
+  padding-right: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-indent: 1rem;
+  text-align: justify;
 }
 
 .alllist{
@@ -135,7 +168,7 @@ header .logo span {
   /* border: 1px solid; */
   font-size: 1.7rem;
   font-weight: 400;
-  margin-left: 0rem;
+  margin-left: 2rem;
 }
 
 .skill {
@@ -145,7 +178,7 @@ header .logo span {
   align-items: stretch;
   margin-top: 5rem;
 }
-.skill .text h1{
+.skill .text h2{
   text-align: left;
   font-size: 2.7rem;
   font-weight: 600;
@@ -159,19 +192,11 @@ header .logo span {
   align-items: stretch;
   margin-top: 5rem;
 }
-.project .text h1{
+.project .text h2{
   text-align: left;
   font-size: 2.7rem;
   font-weight: 600;
   margin-bottom: 2rem;
-}
-
-.cv {
-  border: 1px solid;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  margin-top: 5rem;
 }
 
 
@@ -231,8 +256,8 @@ footer .foot img{
     padding: 0 2%;
     padding-top: 6rem;
     padding-bottom: 2rem;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   header {
     padding: 1rem 1rem;
@@ -243,9 +268,8 @@ footer .foot img{
   header {
     padding: 1rem 1rem;
   }
-  header label {
-    visibility: visible;
-    opacity: 1;
+  .desc .text p{
+    padding-right: 0;
   }
 
   section .profile {

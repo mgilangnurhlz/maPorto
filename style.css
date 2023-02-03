@@ -7,11 +7,10 @@
   outline: none;
   border: none;
 }
-*::selection{
+*::selection {
   background: #000;
-  color:#fff;
+  color: #fff;
 }
-
 
 html {
   font-size: 62.5%;
@@ -32,70 +31,83 @@ section {
   /* border-style: dashed; */
   margin: 0 20%;
 }
-
-header {
-  font-weight: 600;
+#navbar {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: -70px;
   width: 100%;
+  /* border: 1px solid; */
   background: #fff;
-  padding: 0.8rem 20%;
+  display: block;
+}
+#navbar .head {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: left;
+  /* border: 1px solid; */
+  margin: 0.6% 20% 0 20%;
+  border-bottom: 2px solid #d1d1d1;
+}
+#navbar .head .image {
+  /* border: 1px solid; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+#navbar .head .image img {
+  width: 4rem;
+  border-radius: 50%;
+  border: 2px solid;
+}
+#navbar .head .text {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar .head .text h4 {
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 
-header .logo {
-  font-size: 2.3rem;
-  font-weight: 600;
-  color: #424242;
-}
-
-header .logo span {
-  font-weight: 500;
-}
 .profile {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
-  border: 1px solid;
+  /* border: 1px solid; */
   margin-bottom: 1rem;
 }
-.profile .left {
+.profile .right {
   /* border: 1px solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
-.profile .left h1 {
-  
+.profile .right h1 {
   text-align: left;
   font-size: 3rem;
   font-weight: 600;
 }
-.profile .left h3 {
+.profile .right h3 {
   text-align: left;
   font-size: 1.7rem;
   font-weight: 400;
 }
 
-.profile .right {
-  /* border: 1px solid; */
+.profile .left {
   display: flex;
   /* border: 1px solid; */
   align-items: center;
   justify-content: center;
-  padding: 0 1% 0 10%;
+  padding: 0 3% 0 0;
 }
-.profile .right img {
+.profile .left img {
   width: 30rem;
   height: 30rem;
   border-radius: 50%;
-  border: 2px solid;
+  border: 3px solid;
 }
 
 .desc {
@@ -105,58 +117,56 @@ header .logo span {
   align-items: stretch;
   margin-top: 5rem;
 }
-.desc .text{
+.desc .text {
   display: flex;
   flex-direction: column;
 }
-.desc .text h2{
+.desc .text h2 {
   text-align: left;
   font-size: 2.7rem;
   font-weight: 600;
-  
 }
 .desc .text {
   border: 1px solid;
   margin-bottom: 2rem;
 }
 .desc .text img {
-  width:1.3rem;
+  width: 1.3rem;
 }
 
-.desc .text a{
+.desc .text a {
   text-align: left;
   font-size: 1.5rem;
   font-weight: 500;
   color: #000;
 }
-.desc .text a:hover{
+.desc .text a:hover {
   text-align: left;
   font-size: 1.5rem;
   font-weight: 500;
   color: rgb(130, 130, 130);
 }
 
-.desc .text p{
+.desc .text p {
   font-size: 1.7rem;
-  padding-right: 2rem;
+
   font-weight: 400;
   margin-bottom: 2rem;
   text-indent: 1rem;
   text-align: justify;
 }
 
-.alllist{
-  
+.alllist {
   /* border: 1px solid; */
   display: flex;
   flex-direction: column;
 }
-.alllist .list{
+.alllist .list {
   padding-left: 1rem;
   border: 1px solid;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 2.5rem;
 }
 .alllist .list img {
@@ -164,11 +174,11 @@ header .logo span {
   width: 4.5rem;
   height: 4rem;
 }
-.alllist .list h3{
-  /* border: 1px solid; */
+.alllist .list h3 {
+  margin: 0.9rem 0 0.9rem 2rem;
+  border: 1px solid;
   font-size: 1.7rem;
   font-weight: 400;
-  margin-left: 2rem;
 }
 
 .skill {
@@ -178,11 +188,55 @@ header .logo span {
   align-items: stretch;
   margin-top: 5rem;
 }
-.skill .text h2{
+.skill .text h2 {
   text-align: left;
   font-size: 2.7rem;
   font-weight: 600;
   margin-bottom: 2rem;
+}
+.skill .container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  border: 1px solid;
+}
+.skill .container .left {
+  border: 1px solid;
+}
+.skill .container .right {
+  border: 1px solid;
+  display: flex;
+  /* border: 1px solid; */
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 20%;
+}
+.skill .container .right img {
+  width: 30rem;
+  height: 30rem;
+
+  border: 2px solid;
+}
+.skill .alllist .figma {
+  padding-left: 1rem;
+  border: 1px solid;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+.alllist .figma img {
+  /* border: 1px solid; */
+  width: 4.5rem;
+  height: 4rem;
+}
+.alllist .figma h3 {
+  /* border: 1px solid; */
+  margin: 0.9rem 0 0.9rem 2rem;
+  border: 1px solid;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 
 .project {
@@ -192,7 +246,7 @@ header .logo span {
   align-items: stretch;
   margin-top: 5rem;
 }
-.project .text h2{
+.project .text h2 {
   text-align: left;
   font-size: 2.7rem;
   font-weight: 600;
@@ -206,13 +260,29 @@ header .logo span {
   align-items: stretch;
   margin-top: 5rem;
 }
-.portofolio .text h2{
+.portofolio .text h2 {
   text-align: left;
   font-size: 2.7rem;
   font-weight: 600;
   margin-bottom: 2rem;
 }
-
+.list .container {
+  justify-content: left;
+  align-items: left;
+  display: flex;
+  margin-left: 2rem;
+  border: 1px solid;
+  font-size: 1.7rem;
+  margin: 0.9rem 0 0.9rem 2rem;
+  font-weight: 400;
+}
+.list .textrand {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.list.dud {
+  color: #757575;
+}
 
 footer {
   padding-top: 1rem;
@@ -226,17 +296,16 @@ footer .foot {
   align-items: center;
   justify-content: center;
 }
-footer .foot h4{
+footer .foot h4 {
   text-align: left;
   font-size: 1.6rem;
   font-weight: 600;
-  
 }
-footer .foot .images{
+footer .foot .images {
   margin: 0.7rem 0;
 }
 
-footer .foot img{
+footer .foot img {
   width: 3rem;
   margin: 0 1rem;
 }
@@ -261,7 +330,6 @@ footer .foot img{
   }
   section {
     padding-top: 6rem;
-    
   }
 }
 
@@ -282,33 +350,36 @@ footer .foot img{
   header {
     padding: 1rem 1rem;
   }
-  .desc .text p{
+  .desc .text p {
     padding-right: 0;
   }
-
-  section .profile {
-    flex-direction: row-reverse;
+  #navbar .head {
+    border: 1px solid;
+    margin: 1.6% 2.1rem 0 2.1rem;
   }
-  section .profile .right {
+
+  section .profile .left {
     padding: 0 2% 0 0;
   }
 
-  section .profile .left h1 {
+  section .profile .right h1 {
     font-size: 2.6rem;
     font-weight: 600;
   }
-  section .profile .left h3 {
+  section .profile .right h3 {
     font-size: 1.7rem;
     font-weight: 400;
   }
 
-  section .profile .right img {
+  section .profile .left img {
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
     border: 2px solid;
   }
-
+  .skill .container .right {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {

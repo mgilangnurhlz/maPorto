@@ -6,8 +6,8 @@ function myFunction(x) {
 
     function scrollFunction() {
       if (
-        document.body.scrollTop > 170 ||
-        document.documentElement.scrollTop > 170
+        document.body.scrollTop > 148 ||
+        document.documentElement.scrollTop > 148
       ) {
         document.getElementById("navbar").style.top = "0";
       } else {

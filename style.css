@@ -7,11 +7,10 @@
   outline: none;
   border: none;
 }
-*::selection{
+*::selection {
   background: #000;
-  color:#fff;
+  color: #fff;
 }
-
 
 html {
   font-size: 62.5%;
@@ -29,17 +28,17 @@ section {
   padding: 0 0;
   padding-top: 6rem;
   padding-bottom: 2rem;
-  /* border-style: dashed; */
   margin: 0 20%;
 }
-#navbar{
+#navbar {
   position: fixed;
   top: -70px;
   width: 100%;
   background: #fff;
   display: block;
+  z-index: 2;
 }
-#navbar .head{
+#navbar .head {
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -47,27 +46,26 @@ section {
   margin: 0.6% 20% 0 20%;
   border-bottom: 2px solid #d1d1d1;
 }
-#navbar .head .image{
+#navbar .head .image {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 0.5rem;
 }
-#navbar .head .image img{
+#navbar .head .image img {
   width: 4rem;
   border-radius: 50%;
   border: 2px solid;
 }
-#navbar .head .text{
+#navbar .head .text {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#navbar .head .text h4{
+#navbar .head .text h4 {
   font-size: 1.7rem;
   font-weight: 400;
 }
-
 
 .profile {
   display: flex;
@@ -80,22 +78,37 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+ 
 }
 .profile .right h1 {
-  
   text-align: left;
   font-size: 3rem;
   font-weight: 600;
+  
 }
 .profile .right h3 {
   text-align: left;
   font-size: 1.7rem;
   font-weight: 400;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.profile .right a {
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: #fafafa;
+  color: #000;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+}
+.profile .right a:hover {
+  color: #000;
+  background-color:#f4f4f4;
 }
 
 .profile .left {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,51 +127,30 @@ section {
   align-items: stretch;
   margin-top: 5rem;
 }
-.desc .text{
-  display: flex;
+.desc .text {
   flex-direction: column;
+  margin-bottom: 2rem;
 }
-.desc .text h2{
+.desc .text h2 {
   text-align: left;
   font-size: 2.7rem;
   font-weight: 600;
-  
-}
-.desc .text {
-  margin-bottom: 2rem;
-}
-.desc .text img {
-  width:1.3rem;
 }
 
-.desc .text a{
-  text-align: left;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #000;
-}
-.desc .text a:hover{
-  text-align: left;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: rgb(130, 130, 130);
-}
 
-.desc .text p{
+.desc .text p {
   font-size: 1.7rem;
- 
   font-weight: 400;
   margin-bottom: 2rem;
   text-indent: 1rem;
   text-align: justify;
 }
 
-.alllist{
-  
+.alllist {
   display: flex;
   flex-direction: column;
 }
-.alllist .list{
+.alllist .list {
   padding-left: 1rem;
   display: flex;
   flex-direction: row;
@@ -169,11 +161,10 @@ section {
   width: 4.5rem;
   height: 4rem;
 }
-.alllist .list h3{
+.alllist .list h3 {
   margin: 0.9rem 0 0.9rem 2rem;
   font-size: 1.7rem;
   font-weight: 400;
-
 }
 
 .skill {
@@ -181,37 +172,30 @@ section {
   flex-direction: column;
   align-items: stretch;
   margin-top: 5rem;
- 
 }
-.skill .text h2{
+.skill .text h2 {
   text-align: left;
   font-size: 2.7rem;
   font-weight: 600;
   margin-bottom: 0.8rem;
 }
-.skill .container{
-  
+.skill .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  
 }
-.skill .container .right{
+.skill .container .up {
+  display: none;
+}
+.skill .container .down {
   display: flex;
-  align-items: flex-end;
+
   justify-content: center;
-  padding-right: 20%;
-
+  align-items: center;
 }
-.skill .container .right img{
-  width: 30rem;
-  height: 30rem;
- 
-  border: 2px solid;
 
-}
-.skill .alllist .figma{
+.skill .alllist .figma {
   padding-left: 1rem;
   display: flex;
   flex-direction: row;
@@ -222,66 +206,115 @@ section {
   width: 4.5rem;
   height: 4rem;
 }
-.alllist .figma h3{
+.alllist .figma h3 {
   margin: 0.9rem 0 0.9rem 2rem;
   font-size: 1.7rem;
   font-weight: 400;
 }
+.img {
+  width: 500px;
+  height: 500px;
+  margin-top: -50px;
+}
+.social-icons {
+  height: 100%;
+  animation: rotation 60s linear infinite;
+}
 
+.social-icons img {
+  position: absolute;
+  width: 5rem;
+  
+  border-radius: 4px;
+  z-index: 1;
+}
+.social-icons img:nth-child(1) {
+  top: 8.5%;
+  left: 48%;
+}
+.social-icons img:nth-child(2) {
+  top: 18%;
+  right: 17.5%;
+}
+.social-icons img:nth-child(3) {
+  top: 40%;
+  right: 8%;
+}
+.social-icons img:nth-child(4) {
+  top: 64%;
+  right: 18%;
+}
+.social-icons img:nth-child(5) {
+  top: 73%;
+  right: 41%;
+}
+.social-icons img:nth-child(6) {
+  top: 64%;
+  right: 63%;
+}
+.social-icons img:nth-child(7) {
+  top: 40%;
+  right: 73%;
+}
+.social-icons img:nth-child(8) {
+  top: 18%;
+  right: 63.5%;
+}
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .project {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  margin-top: 5rem;
+  margin-top: 1.5 rem;
 }
-.project .text h2{
+.project .text h2 {
   text-align: left;
   font-size: 2.7rem;
   font-weight: 600;
   margin-bottom: 2rem;
 }
-.alllist2{
-  
+.alllist2 {
   display: flex;
   flex-direction: column;
 }
-.alllist2 .list2{
+.alllist2 .list2 {
   padding-left: 1rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0.8rem 0 0.8em 1rem;
-
 }
 .alllist2 .list2 img {
   width: 4.5rem;
   height: 4rem;
 }
-.alllist2 .list2 h3{
+.alllist2 .list2 h3 {
   margin: 0.9rem 0 0.9rem 2rem;
   color: #000;
   font-size: 1.7rem;
   font-weight: 400;
-
 }
-.alllist2 a:hover{
+.alllist2 a:hover {
   background-color: #efefef;
 }
 
 .portofolio {
-
   display: flex;
   flex-direction: column;
   align-items: stretch;
   margin-top: 5rem;
 }
-.portofolio .text h2{
+.portofolio .text h2 {
   text-align: left;
   font-size: 2.7rem;
   font-weight: 600;
 }
-.list .containers{
+.list .containers {
   justify-content: left;
   align-items: left;
   display: flex;
@@ -290,22 +323,20 @@ section {
   margin: 0.9rem 0 0.9rem 2rem;
   font-weight: 400;
 }
-.list .textrand{
+.list .textrand {
   font-size: 1.7rem;
   font-weight: 400;
 }
-.list.dud{
-  color: #757575;}
-
+.list.dud {
+  color: #757575;
+}
 
 footer {
   padding-top: 1rem;
   background: #fff;
-
 }
 
 footer .foot {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -313,17 +344,16 @@ footer .foot {
   border-top: 2px solid #d1d1d1;
   margin: 0.6% 20% 0 20%;
 }
-footer .foot h4{
+footer .foot h4 {
   text-align: left;
   font-size: 1.6rem;
   font-weight: 600;
-  
 }
-footer .foot .images{
+footer .foot .images {
   margin: 0.7rem 0;
 }
 
-footer .foot img{
+footer .foot img {
   width: 3rem;
   margin: 0 1rem;
 }
@@ -348,7 +378,6 @@ footer .foot img{
   }
   section {
     padding-top: 6rem;
-    
   }
 }
 
@@ -363,22 +392,31 @@ footer .foot img{
   header {
     padding: 1rem 1rem;
   }
-  footer .foot{
+  footer .foot {
     margin: 0 2.2rem;
   }
-  
 }
 
 @media (max-width: 768px) {
-  header {
-    padding: 1rem 1rem;
+
+  #navbar .head .image img {
+   
+    border: 1px solid;
   }
-  
-  .desc .text p{
+  .skill .container .up {
+    display: flex;
+  }
+  .skill .container .down {
+    display: none;
+  }
+  .project {
+    margin-top: 5 rem;
+  }
+
+  .desc .text p {
     padding-right: 0;
   }
-  #navbar .head{
-
+  #navbar .head {
     margin: 1.6% 2.1rem 0 2.1rem;
   }
 
@@ -389,10 +427,10 @@ footer .foot img{
   section .profile .right h1 {
     font-size: 2.6rem;
     font-weight: 600;
+    margin-bottom: 1.3rem;
   }
   section .profile .right h3 {
-    font-size: 1.7rem;
-    font-weight: 400;
+    display: none;
   }
 
   section .profile .left img {
@@ -401,10 +439,9 @@ footer .foot img{
     border-radius: 50%;
     border: 2px solid;
   }
-  .skill .container .right{
+  .skill .container .right {
     display: none;
   }
-
 }
 
 @media (max-width: 450px) {

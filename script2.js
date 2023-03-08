@@ -21,8 +21,8 @@ function myFunction(x) {
 
     function scrollFunction() {
       if (
-        document.body.scrollTop > 390 ||
-        document.documentElement.scrollTop > 390
+        document.body.scrollTop > 363 ||
+        document.documentElement.scrollTop > 363
       ) {
         document.getElementById("navbar").style.top = "0";
       } else {

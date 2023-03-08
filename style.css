@@ -42,7 +42,7 @@ section {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  justify-content: left;
+  justify-content: space-between;
   margin: 0.6% 20% 0 20%;
   border-bottom: 2px solid #d1d1d1;
 }
@@ -51,19 +51,18 @@ section {
   justify-content: space-between;
   margin: 0.6% 20% 0 20%;
  
-  border-bottom: 2px solid #d1d1d1;
+
 }
 #navbar .head .left{
   display: flex;
   flex-direction: row;
   margin-bottom: 5px;
+  
 
 }
 #navbar .head .left .image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 0.5rem;
+  margin-left: 0;
 }
 
 #navbar .head .left .image img {
